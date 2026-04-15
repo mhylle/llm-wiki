@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian (local vault config)
+.obsidian/
+
+# Obsidian Web Clipper default output (use raw/ instead)
+Clippings/
+
+# Node
+node_modules/
+
+# Quartz build output
+public/
+.quartz-cache/
+
+# Tool caches
+tools/__pycache__/
+tools/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Runtime state (machine-local)
+.state/
+# Allow generated indexes needed by the wiki viewer
+!.state/graph.json
+!.state/search-index.json

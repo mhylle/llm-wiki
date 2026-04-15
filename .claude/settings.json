@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_input.filePath' | grep -qiE '(/|\\\\)raw(/|\\\\)' && echo '{\"decision\":\"block\",\"reason\":\"BLOCKED: raw/ sources are immutable — the LLM must never modify files in raw/\"}' || echo '{\"decision\":\"allow\"}'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
