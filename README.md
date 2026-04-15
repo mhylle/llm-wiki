@@ -135,6 +135,15 @@ llm-wiki/
 
 ## Usage
 
+### Capturing Sources
+
+The `raw/` directory accepts any markdown file. You can create sources manually, but the fastest way to capture web articles is the [Obsidian Web Clipper](https://obsidian.md/clipper) browser extension. Configure it to save clipped pages directly into your `raw/` folder as markdown. One click captures a full article, ready to ingest.
+
+Other good options:
+- **Copy-paste** into a markdown file — quick and works for anything
+- **Markdownload** browser extension — another web-to-markdown tool
+- **PDF files** — Claude can read PDFs directly from `raw/`
+
 ### Ingesting a Source
 
 1. Save an article, paper, or note as markdown in `raw/`:
